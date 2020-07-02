@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="39eaab58-2a13-4411-aaf7-14f9b82c798d" name="Default Changelist" comment="" />
+    <list default="true" id="39eaab58-2a13-4411-aaf7-14f9b82c798d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Classes/CsvRead.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Classes/CsvWrite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Classes/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Classes/Home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Classes/Lift.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Classes/Lift.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Classes/Person.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Classes/Person.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +38,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2">
     <include_path>
@@ -114,6 +145,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1e4mbDc9ClPe68HcEthe2vUIh8h" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -121,10 +153,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -144,33 +177,53 @@
       <updated>1593589308177</updated>
       <workItem from="1593589309927" duration="528000" />
       <workItem from="1593589851289" duration="1326000" />
-      <workItem from="1593591208044" duration="21169000" />
+      <workItem from="1593591208044" duration="21422000" />
+      <workItem from="1593673261294" duration="20914000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="543" y="198" width="826" height="683" key="#CLI_Interpreters" timestamp="1593591094724">
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
     <state x="543" y="198" width="826" height="683" key="#CLI_Interpreters/0.28.1920.1024@0.28.1920.1024" timestamp="1593591094724" />
-    <state x="693" y="298" width="526" height="483" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1593593284959">
+    <state x="693" y="298" width="526" height="483" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1593693429400">
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
-    <state x="693" y="298" width="526" height="483" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1593593284959" />
-    <state x="694" y="260" width="523" height="560" key="NewPhpClassDialog" timestamp="1593605217544">
+    <state x="693" y="298" width="526" height="483" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1593693429400" />
+    <state x="694" y="260" width="523" height="560" key="NewPhpClassDialog" timestamp="1593695532512">
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
-    <state x="694" y="260" width="523" height="560" key="NewPhpClassDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1593605217544" />
-    <state x="755" y="466" width="401" height="148" key="NewPhpFileDialog" timestamp="1593590943574">
+    <state x="694" y="260" width="523" height="560" key="NewPhpClassDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1593695532512" />
+    <state x="755" y="466" width="401" height="148" key="NewPhpFileDialog" timestamp="1593682886438">
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
-    <state x="755" y="466" width="401" height="148" key="NewPhpFileDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1593590943574" />
-    <state x="449" y="175" key="SettingsEditor" timestamp="1593591176977">
+    <state x="755" y="466" width="401" height="148" key="NewPhpFileDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1593682886438" />
+    <state x="449" y="175" key="SettingsEditor" timestamp="1593674143568">
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
-    <state x="449" y="175" key="SettingsEditor/0.28.1920.1024@0.28.1920.1024" timestamp="1593591176977" />
+    <state x="449" y="175" key="SettingsEditor/0.28.1920.1024@0.28.1920.1024" timestamp="1593674143568" />
+    <state x="651" y="250" width="618" height="580" key="find.popup" timestamp="1593673582014">
+      <screen x="0" y="28" width="1920" height="1024" />
+    </state>
+    <state x="651" y="250" width="618" height="580" key="find.popup/0.28.1920.1024@0.28.1920.1024" timestamp="1593673582014" />
+    <state x="685" y="454" width="542" height="171" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1593673589628">
+      <screen x="0" y="28" width="1920" height="1024" />
+    </state>
+    <state x="685" y="454" width="542" height="171" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1593673589628" />
   </component>
 </project>

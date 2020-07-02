@@ -6,11 +6,16 @@ namespace App\Classes;
 
 class Home
 {
-        public $countOfFlours;
+        private $countOfFloors;
 
-        public function __construct($countOfFlours)
+        public function __construct($countOfFloors)
         {
-            $this->countOfFlours = $countOfFlours;
+            $this->countOfFloors = $countOfFloors;
+        }
+
+        public function getCountOfFloors()
+        {
+            return $this->countOfFloors;
         }
 
 }
