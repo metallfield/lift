@@ -10,7 +10,7 @@ class Person
     const DELETED = 1;
 
     public function getResult($users)
-    {
+    {echo '<h2>result:</h2>';
         foreach ($users as $user) {
             $this->analize($user);
         }
@@ -18,9 +18,10 @@ class Person
 
     private function analize($user)
     {
+
         if ($user[2] == self::ACTIVE_STATUS && $user[3] != self::DELETED) {
             echo '<pre>';
-            print_r($user);
+            print_r($user[0]);
         }
     }
 

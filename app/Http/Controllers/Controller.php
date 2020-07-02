@@ -36,6 +36,7 @@ class Controller extends BaseController
         $users = new Person();
         $users->getActiveUsers($usersList);
         $users->getDeletedUsers($usersList);
+        $users->getResult($usersList);
 
  }
 

@@ -20,15 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39eaab58-2a13-4411-aaf7-14f9b82c798d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Classes/CsvRead.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Classes/CsvWrite.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Classes/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Classes/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Classes/Lift.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Classes/Lift.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Classes/Person.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Classes/Person.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +170,7 @@
       <workItem from="1593589309927" duration="528000" />
       <workItem from="1593589851289" duration="1326000" />
       <workItem from="1593591208044" duration="21422000" />
-      <workItem from="1593673261294" duration="20914000" />
+      <workItem from="1593673261294" duration="21060000" />
     </task>
     <servers />
   </component>
