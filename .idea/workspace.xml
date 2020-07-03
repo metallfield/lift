@@ -20,7 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39eaab58-2a13-4411-aaf7-14f9b82c798d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Classes/WordsAnalizer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/WordsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/words/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Classes/CsvRead.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Classes/CsvRead.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Classes/CsvWrite.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Classes/CsvWrite.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Classes/Person.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Classes/Person.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +179,8 @@
       <workItem from="1593589309927" duration="528000" />
       <workItem from="1593589851289" duration="1326000" />
       <workItem from="1593591208044" duration="21422000" />
-      <workItem from="1593673261294" duration="21060000" />
+      <workItem from="1593673261294" duration="21209000" />
+      <workItem from="1593759908865" duration="22938000" />
     </task>
     <servers />
   </component>
@@ -187,32 +197,33 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="543" y="198" width="826" height="683" key="#CLI_Interpreters" timestamp="1593591094724">
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
     <state x="543" y="198" width="826" height="683" key="#CLI_Interpreters/0.28.1920.1024@0.28.1920.1024" timestamp="1593591094724" />
-    <state x="693" y="298" width="526" height="483" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1593693429400">
+    <state x="693" y="298" width="526" height="483" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1593762767630">
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
-    <state x="693" y="298" width="526" height="483" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1593693429400" />
-    <state x="694" y="260" width="523" height="560" key="NewPhpClassDialog" timestamp="1593695532512">
+    <state x="693" y="298" width="526" height="483" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1593762767630" />
+    <state x="694" y="260" width="595" height="560" key="NewPhpClassDialog" timestamp="1593763562120">
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
-    <state x="694" y="260" width="523" height="560" key="NewPhpClassDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1593695532512" />
-    <state x="755" y="466" width="401" height="148" key="NewPhpFileDialog" timestamp="1593682886438">
+    <state x="694" y="260" width="595" height="560" key="NewPhpClassDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1593763562120" />
+    <state x="755" y="466" width="401" height="148" key="NewPhpFileDialog" timestamp="1593762856128">
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
-    <state x="755" y="466" width="401" height="148" key="NewPhpFileDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1593682886438" />
+    <state x="755" y="466" width="401" height="148" key="NewPhpFileDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1593762856128" />
     <state x="449" y="175" key="SettingsEditor" timestamp="1593674143568">
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
     <state x="449" y="175" key="SettingsEditor/0.28.1920.1024@0.28.1920.1024" timestamp="1593674143568" />
-    <state x="651" y="250" width="618" height="580" key="find.popup" timestamp="1593673582014">
+    <state x="651" y="250" width="618" height="580" key="find.popup" timestamp="1593761125110">
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
-    <state x="651" y="250" width="618" height="580" key="find.popup/0.28.1920.1024@0.28.1920.1024" timestamp="1593673582014" />
+    <state x="651" y="250" width="618" height="580" key="find.popup/0.28.1920.1024@0.28.1920.1024" timestamp="1593761125110" />
     <state x="685" y="454" width="542" height="171" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1593673589628">
       <screen x="0" y="28" width="1920" height="1024" />
     </state>

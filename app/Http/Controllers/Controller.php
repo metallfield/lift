@@ -14,7 +14,8 @@ class Controller extends BaseController
 {
 
     public function index(){
-   /*     $home = new Home(7);
+   /*   #lift tusk
+     $home = new Home(7);
         $lift = new Lift();
         $user1 = new Person('user1', 90);
         $user2 = new Person('user2', 30);
@@ -29,10 +30,9 @@ class Controller extends BaseController
 
 
 
-        $csvWrite = new CsvWrite();
-        $csvWrite->writeTo('/home/developer/Desktop/file.csv');
-        $csvRead = new CsvRead();
-        $usersList = $csvRead->read('/home/developer/Desktop/file.csv');
+
+        CsvWrite::writeTo('/home/developer/Desktop/file.csv');
+        $usersList = CsvRead::read('/home/developer/Desktop/file.csv');
         $users = new Person();
         $users->getActiveUsers($usersList);
         $users->getDeletedUsers($usersList);

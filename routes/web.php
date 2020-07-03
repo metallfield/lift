@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'Controller@index');
+Route::get('/words', 'WordsController@index')->name('words');

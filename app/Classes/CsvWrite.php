@@ -7,35 +7,41 @@ namespace App\Classes;
 class CsvWrite
 {
 
-    public function writeTo($path)
+    public static function writeTo($path)
     {
-        $fp = fopen($path, 'w');
-        for ($i = 1; $i <=20; $i++){
-            $arr = [
-                $this->generateName(), $this->generatePassword(), $this->generateIsDeleted(), $this->generateIsActive()
+        if (filesize($path) == 0)
+        {
+            $fp = fopen($path, 'w');
+            for ($i = 1; $i <=20; $i++){
+                $arr = [
+                    CsvWrite::generateName(),
+                    CsvWrite::generatePassword(),
+                    CsvWrite::generateIsDeleted(),
+                    CsvWrite::generateIsActive()
                 ];
-            fputcsv($fp, $arr);
+                fputcsv($fp, $arr);
+            }
+            fclose($fp);
         }
-        fclose($fp);
     }
 
 
-    public function generateName()
+    private static function generateName()
     {
         $permitted_chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         return substr(str_shuffle($permitted_chars), 0, 10);
     }
-    public function generatePassword()
+    private static function generatePassword()
     {
         $permitted_chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         return substr(str_shuffle($permitted_chars), 0, 10);
     }
 
-    public function generateIsDeleted()
+    private static function generateIsDeleted()
     {
         return    rand(0,1);
     }
-    public function generateIsActive()
+    private static function generateIsActive()
     {
         return    rand(0,1);
     }

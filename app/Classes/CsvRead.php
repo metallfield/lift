@@ -7,11 +7,11 @@ namespace App\Classes;
 class CsvRead
 {
 
-    public function read($csvFile)
+    public static function read($csvFile)
     {
-        return $this->readCSV($csvFile);
+        return CsvRead::readCSV($csvFile);
     }
-    private function readCSV($csvFile){
+    private static function readCSV($csvFile){
         $file_handle = fopen($csvFile, 'r');
         while (!feof($file_handle) ) {
             $line_of_text[] = fgetcsv($file_handle, 1024);
