@@ -8,7 +8,7 @@ class WordsAnalizer
 {
     private $resultList;
     public $countLetter;
-    public $notUniqueWords= [];
+    public $notUniqueWords = [];
 
     public function chooseMethod($params)
     {
@@ -16,75 +16,45 @@ class WordsAnalizer
         {
             switch ($params['method']) {
                 case 'words_count':
-                    return $this->analize($params);
+                      $this->analize($params);
                     break;
                 case 'regular_search':
-                    return $this->findBy($params);
+                      $this->findByRegular($params);
                     break;
             }
         }
-
     }
 
-    public function findBy($params)
+    private function findByRegular($params)
     {
-        $wordsString = $params['wordsList'];
+        $wordsString = explode(' ', $params['wordsList']);
         $findBySymbols = $params['symbol'];
-        switch ($findBySymbols){
-            case $findBySymbols{0} === '*' || $findBySymbols{0} === '+':
-                 $this->getWordsWithSymbols($findBySymbols, $wordsString);
-                break;
-            case $findBySymbols{0} === '?':
-                 $this->getAfterFirstSymbols($findBySymbols, $wordsString);
-                break;
-            case $findBySymbols{-1} === '?':
-                 $this->getBeforeLastSymbols($findBySymbols, $wordsString);
-                break;
+        foreach ($wordsString as $word) {
+        $matches = $this->wildcards($word, $findBySymbols);
+            foreach ($matches as $match) {
+                $this->resultList[] = $this->underline($match, $word);
+            }
         }
     }
 
-    public function getWordsWithSymbols($findBySymbols, $wordsString)
+    private function wildcards($word, $findBySymbols)
     {
-        $pattern = substr($findBySymbols, 0,1);
-        $find = substr($findBySymbols, 1);
-        $wordsArr = explode(' ', $wordsString);
-        foreach ($wordsArr as $word)
-        {
-            if (preg_match('/'.preg_quote($find).''.$pattern.'/', $word))
-            {
-                $this->resultList[] = $this->underline($find, $word);
-            }
-        }
+        $special_chars = "\.^$[]()|{}/'#";
+        $special_chars = str_split($special_chars);
+        foreach ($special_chars as $char) $escape[$char] = preg_quote($char);
+        $pattern = strtr($findBySymbols, $escape);
+        $search = ['*', '+', '?'];
+        $replace = ['.*', '.+', '.'];
+        $pattern = str_replace($search, $replace, $pattern);
+        preg_match("/$pattern/", $word, $match);
+        return $match;
     }
 
-    public function getAfterFirstSymbols($findBySymbols, $wordsString)
+    private function underline($find, $word)
     {
-        $find = substr($findBySymbols, 1);
-        $wordsArr = explode(' ', $wordsString);
-        foreach ($wordsArr as $word)
-        {
-            if (preg_match('/^'.preg_quote($find).'/', $word))
-            {
-                $this->resultList[] =  $this->underline($find, $word);
-            }
-        }
+        return str_replace( $find, '<span style="color:red">'.$find.'</span>', $word);
     }
-        public function getBeforeLastSymbols($findBySymbols, $wordsString)
-        {
-            $find = substr($findBySymbols, 0,-1);
-            $wordsArr = explode(' ', $wordsString);
-            foreach ($wordsArr as $word) {
-                if (preg_match('/'.preg_quote($find).'$/', $word)) {
-                    $this->resultList[] =  $this->underline($find, $word);
-                }
-            }
-        }
 
-
-        private function underline($find, $word)
-        {
-        return    preg_replace('~' . preg_quote($find) . '~iu', '<span style="color:red">$0</span>', $word);
-        }
     public function analize($params)
     {
         $wordsString = $params['wordsList'];
